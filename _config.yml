@@ -1,0 +1,24 @@
+title: 福岡Ruby会議02
+email: udzura@udzura.jp
+description: only my simple vision of casper theme
+baseurl: "/fukuoka02"
+url: http://127.0.0.1:4000/fukuoka02/
+twitter_username: fukuokark
+github_username:  fukuokark
+#github_url: https://fukuokarb.connpass.com/
+  
+
+# Build settings
+permalink: :title
+paginate: 1
+paginate_path: "page:num"
+kramdown:
+  input: GFM
+  hard_wrap: false
+highlighter: rouge
+gems:
+  - jekyll-feed
+  - jekyll-paginate
+exclude:
+  - Gemfile
+  - Gemfile.lock
