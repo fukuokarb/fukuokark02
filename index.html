@@ -1,26 +1,45 @@
 ---
-title: ''
+title: '福岡Ruby会議02'
+description: 'もう一度、Rubyと出会う'
 layout: default
 ---
+<section class="author-profile inner" style="margin-top: 12rem;">
+  <h1 class="author-title">日時</h1>
+  <h2 class="author-bio"></h2>
+  <section class="post-excerpt" style="font-size: 2.2em; line-height: 3em;">
+    <p>2017年11月25日 (Sat)</p>
+  </section>
+</section>
 
-  {% for post in site.posts %}
-    <article class="post">
-      <header class="post-header">
-        <h2 class="post-title"><a href="{{ site.github_url }}{{ post.url }}">{{ post.title }}</a></h2>
-      </header>
-      <section class="post-excerpt">
-        <p>{{ post.description }}</p>
-      </section>
-      <footer class="post-meta">
-        by <a href="{{ site.github_url }}about">{{ site.author.name }}</a> <img class="author-thumb" src="{{ site.author.picture }}" alt="{{ site.author.name }}">
-        <time class="post-date" datetime="{{ post.date | date: "%-Y-%m-%d" }}">{{ post.date | date: "%d %b %Y" }}</time>
-      </footer>
-    </article>
-  {% endfor %}
+<section class="author-profile inner" style="margin-top: 12rem;">
+  <h1 class="author-title">場所</h1>
+  <h2 class="author-bio"></h2>
+  <section class="post-excerpt" style="font-size: 2.2em; line-height: 3em;">
+    <p>Fukuoka growth next (大名小跡地)</p>
+    <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3238.2990641503225!2d130.39288827752213!3d33.590358400421316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x354191860efba4d3%3A0xd33287b5f6832abf!2z44CSODEwLTAwNDEg56aP5bKh55yM56aP5bKh5biC5Lit5aSu5Yy65aSn5ZCN77yS5LiB55uu77yW4oiS77yR77yR!5e0!3m2!1sja!2sjp!4v1492671285902" width="600" height="450" frameborder="0" style="border:0; margin:2em auto;" allowfullscreen></iframe></p>
+  </section>
+</section>
 
-  <nav class="pagination" role="navigation">
-    <span class="page-number">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
-    {% if paginator.next_page %}
-    <a class="older-posts" href="{{ paginator.next_page_path }}">Older Posts <span aria-hidden="true">&rarr;</span></a>
-    {% endif %}
-  </nav>
+<section class="author-profile inner" style="margin-top: 12rem;">
+  <figure class="author-image">
+    <div class="img" style="background-image: url('https://avatars1.githubusercontent.com/u/91011?v=3&s=460')"><span class="hidden">Uchio's Picture</span></div>
+  </figure>
+  <h1 class="author-title">Uchio Kondo</h1>
+  <h2 class="author-bio">Creator of Haconiwa</h2>
+  <div class="author-meta">
+    <span class="author-location icon-location">http://udzura.hatenablog.jp/</span>
+    <span class="author-link icon-link"><a href="http://github.com/udzura" target="_blank">@udzura</a></span>
+  </div>
+</section>
+
+<section class="author-profile inner" style="margin-top: 12rem;">
+  <figure class="author-image">
+    <div class="img" style="background-image: url('https://avatars1.githubusercontent.com/u/91011?v=3&s=460')"><span class="hidden">Uchio's Picture</span></div>
+  </figure>
+  <h1 class="author-title">Uchio Kondo</h1>
+  <h2 class="author-bio">Creator of Haconiwa</h2>
+  <div class="author-meta">
+    <span class="author-location icon-location">http://udzura.hatenablog.jp/</span>
+    <span class="author-link icon-link"><a href="http://github.com/udzura" target="_blank">@udzura</a></span>
+  </div>
+</section>
