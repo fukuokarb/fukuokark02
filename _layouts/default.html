@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -12,12 +12,13 @@
   {% endif %}
   <link rel="stylesheet" type="text/css" href="{{ site.github_url }}assets/css/normalize.css" />
   <link rel="stylesheet" type="text/css" href="{{ site.github_url }}assets/css/style.css" />
+  <link href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" rel="stylesheet" />
 </head>
-<body>
+<body class="{{ page.layout }}">
   {% include menu.html %}
   <div>
     {% include header.html %}
-    <main id="content" class="content" role="main">
+    <main class="wrapper" role="main">
     {{ content }}
     </div>
   </div>
