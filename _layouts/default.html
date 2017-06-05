@@ -12,13 +12,13 @@
   {% endif %}
   <link rel="stylesheet" type="text/css" href="{{ site.github_url }}assets/css/normalize.css" />
   <link rel="stylesheet" type="text/css" href="{{ site.github_url }}assets/css/style.css" />
-  <link href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" rel="stylesheet" />
 </head>
 <body class="{{ page.layout }}">
   <div>
     {% include header.html %}
     <main class="wrapper" role="main">
-    {{ content }}
+      {% include hero.html %}
+      {{ content }}
     </div>
   </div>
   {% include footer.html %}

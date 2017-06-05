@@ -10,7 +10,7 @@ html {
 body {
   height: 100%;
   max-height: 100%;
-  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Noto Sans Japanese", "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, Meiryo, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, Meiryo, sans-serif;
   font-size: 1.6rem;
   line-height: 1.6;
   color: #59585B;
@@ -176,23 +176,23 @@ button {
 /* アイキャッチ */
 
 .header {
-  position: relative;
   display: flex;
   width: 100%;
   max-width: 1260px;
-  height: 70px;
+  height: 80px;
   margin: 0 auto 80px;
   padding: 0 20px;
   overflow: hidden;
-  background: #000;
   box-sizing: border-box;
+  z-index: 100;
+  position: absolute;
   -webkit-justify-content: space-between;
           justify-content: space-between;
   -webkit-align-items: center;
           align-items: center;
 }
 .header__brand {
-  width: 50px;
+  width: 60px;
 }
 .header__logo {
   display: flex;
@@ -214,14 +214,34 @@ button {
           align-items: center;
 }
 .header__item {
-  margin: 0 0 0 10px;
+  margin: 0 0 0 20px;
 }
 .header__item a {
   text-decoration: none;
   color: #FFF;
+  font-weight: bold;
 }
 .header__item a:hover {
   color: #B5B5B5;
+}
+
+.hero {
+  background-image: url("../images/bg.png");
+  padding: 100px 20px 80px;
+}
+.hero__logo {
+  max-width: 260px;
+  width: 100%;
+  margin: 0 auto 30px;
+}
+.hero__date,
+.hero__place {
+  color: #FFF;
+  margin: 0 auto;
+  font-size: 24px;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: .5px;
 }
 
 /* Put a semi-opaque radial gradient behind the icon to make it more visible
