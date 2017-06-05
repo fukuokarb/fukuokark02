@@ -40,7 +40,7 @@ a {
   transition: color 0.3s ease;
 }
 a:hover {
-  color: #111;
+  color: #CB2D3E;
 }
 
 p, ul, ol, dl {
@@ -182,26 +182,47 @@ button {
   max-width: 1260px;
   height: 70px;
   margin: 0 auto 80px;
+  padding: 0 20px;
   overflow: hidden;
+  background: #000;
+  box-sizing: border-box;
   -webkit-justify-content: space-between;
           justify-content: space-between;
   -webkit-align-items: center;
           align-items: center;
 }
 .header__brand {
-
+  width: 50px;
 }
-.main-nav {
-    position: relative;
-    padding: 35px 40px;
-    margin: 0 0 30px 0;
+.header__logo {
+  display: flex;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-align-items: center;
+          align-items: center;
 }
-
-.main-nav a {
-    text-decoration: none;
-    font-family: 'Open Sans', sans-serif;
+.header__logo img {
+  width: 100%;
 }
-
+.header__items {
+  list-style: none;
+  margin: 0;
+  display: flex;
+  -webkit-justify-content: flex-start;
+          justify-content: flex-start;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.header__item {
+  margin: 0 0 0 10px;
+}
+.header__item a {
+  text-decoration: none;
+  color: #FFF;
+}
+.header__item a:hover {
+  color: #B5B5B5;
+}
 
 /* Put a semi-opaque radial gradient behind the icon to make it more visible
    on photos which happen to have a light background. */
