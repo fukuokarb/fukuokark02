@@ -227,21 +227,60 @@ button {
 
 .hero {
   background-image: url("../images/bg.png");
+  background-size: cover;
   padding: 100px 20px 80px;
 }
 .hero__logo {
   max-width: 260px;
   width: 100%;
   margin: 0 auto 30px;
+  -webkit-animation: fadeIn 2s ease 0s 1 normal;
+  animation: fadeIn 2s ease 0s 1 normal;
 }
 .hero__date,
 .hero__place {
   color: #FFF;
   margin: 0 auto;
-  font-size: 24px;
+  font-size: 2.4rem;
   text-align: center;
   font-weight: bold;
   letter-spacing: .5px;
+}
+
+.default-section {
+  padding: 80px 20px;
+}
+.default-section--gray {
+  background: #fafafa;
+}
+.default-section--map {
+  padding: 0;
+}
+.default-section--map iframe {
+  width: 100%;
+  height: 300px;
+  border: 0;
+}
+.default-section__inner {
+  max-width: 970px;
+  margin: 0 auto;
+}
+.default-section__headline {
+  font-size: 4rem;
+  margin: 0 auto 20px;
+  text-align: center;
+  line-height: 1.2;
+}
+.default-section__title {
+  font-size: 2.4rem;
+  text-align: center;
+  margin: 0 auto 20px;
+  line-height: 1.2;
+}
+.default-section__body {
+  text-align: center;
+  margin: 0 auto 10px;
+  color: #999;
 }
 
 /* Put a semi-opaque radial gradient behind the icon to make it more visible
@@ -1264,8 +1303,21 @@ body.page-template .post-title {
 }
 
 /* ユーティリティー */
+
 .hidden {
   text-indent: -9999px;
   visibility: hidden;
   display: none;
+}
+
+/* アニメーション */
+
+@keyframes fadeIn {
+  0% {opacity: 0}
+  100% {opacity: 1}
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity: 0}
+  100% {opacity: 1}
 }
