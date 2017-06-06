@@ -1,6 +1,12 @@
 <nav class="header__nav">
   <ul class="header__items">
-    <li class="header__item"><a href="#about">About</a></li>
-    <li class="header__item"><a href="#tickets">Tickets</a></li>
+    {% if page.layout == "default" %}
+      <li class="header__item"><a href="#about">About</a></li>
+      <li class="header__item"><a href="#tickets">Tickets</a></li>
+    {% else %}
+      <!-- 予約時に表示
+        <li class="header__item"><a href="#">チケットを予約する</a></li>
+      -->
+    {% endif %}
   </ul>
 </nav>
