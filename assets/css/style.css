@@ -47,12 +47,13 @@ p, ul, ol, dl {
   -webkit-font-feature-settings: 'liga' 1, 'onum' 1, 'kern' 1;
   -moz-font-feature-settings: 'liga' 1, 'onum' 1, 'kern' 1;
   -o-font-feature-settings: 'liga' 1, 'onum' 1, 'kern' 1;
-  margin: 0 0 1rem 0;
+  margin: 0 0 1.6rem 0;
   text-rendering: geometricPrecision;
+  word-break: break-all;
 }
 
 ol, ul {
-  padding: 0;
+  padding: 0 0 0 20px;
 }
 
 dl dt,
@@ -176,16 +177,21 @@ button {
 /* ヘッダー */
 
 .header {
-  display: flex;
   width: 100%;
-  max-width: 1260px;
-  height: 80px;
   margin: 0 auto 80px;
-  padding: 0 20px;
   overflow: hidden;
-  box-sizing: border-box;
   z-index: 100;
   position: absolute;
+}
+.header--post {
+  background: #F85032;
+}
+.header__inner {
+  max-width: 1260px;
+  height: 80px;
+  box-sizing: border-box;
+  padding: 0 20px;
+  display: flex;
   -webkit-justify-content: space-between;
           justify-content: space-between;
   -webkit-align-items: center;
@@ -195,6 +201,7 @@ button {
   width: 60px;
 }
 .header__logo {
+  cursor: pointer;
   display: flex;
   -webkit-justify-content: center;
           justify-content: center;
@@ -217,6 +224,7 @@ button {
   margin: 0 0 0 20px;
 }
 .header__item a {
+  cursor: pointer;
   text-decoration: none;
   color: #FFF;
   font-weight: bold;
@@ -236,8 +244,8 @@ button {
   max-width: 200px;
   width: 100%;
   margin: 0 auto 30px;
-  -webkit-animation: fadeIn 1.2s ease 0s 1 normal;
-  animation: fadeIn 1.2s ease 0s 1 normal;
+  -webkit-animation: fadeIn 1.5s ease 0s 1 normal;
+  animation: fadeIn 1.5s ease 0s 1 normal;
 }
 .hero__date,
 .hero__place {
@@ -249,7 +257,7 @@ button {
   letter-spacing: .2px;
 }
 
-/* default　レイアウト */
+/* default */
 
 .default-section {
   padding: 80px 20px;
@@ -283,6 +291,30 @@ button {
 }
 .default-section__body {
   text-align: center;
+  margin: 0 auto 10px;
+  color: #999;
+}
+
+/* post */
+
+.post {
+  padding: 160px 0 0;
+}
+.post__inner {
+  max-width: 970px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.post__header {
+  text-align: center;
+  margin: 0 0 80px;
+}
+.post__title {
+  font-size: 4rem;
+  text-align: center;
+  line-height: 1.2;
+}
+.post__body {
   margin: 0 auto 10px;
   color: #999;
 }
@@ -324,6 +356,9 @@ button {
     text-indent: -9999px;
     visibility: hidden;
     display: none;
+  }
+  .post {
+    padding: 160px 0 80px;
   }
 }
 
