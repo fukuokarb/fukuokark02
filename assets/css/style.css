@@ -222,7 +222,7 @@ button {
   font-weight: bold;
 }
 .header__item a:hover {
-  color: #B5B5B5;
+  color: #F0D719;
 }
 
 /* アイキャッチ */
@@ -246,7 +246,7 @@ button {
   font-size: 1.6rem;
   text-align: center;
   font-weight: bold;
-  letter-spacing: .5px;
+  letter-spacing: .2px;
 }
 
 /* default　レイアウト */
