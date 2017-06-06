@@ -12,7 +12,7 @@ body {
   max-height: 100%;
   font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, Meiryo, sans-serif;
   font-size: 1.6rem;
-  line-height: 1.6;
+  line-height: 1.8;
   color: #59585B;
   -webkit-font-feature-settings: 'kern' 1;
   -moz-font-feature-settings: 'kern' 1;
@@ -233,7 +233,7 @@ button {
   padding: 100px 20px 80px;
 }
 .hero__logo {
-  max-width: 260px;
+  max-width: 200px;
   width: 100%;
   margin: 0 auto 30px;
   -webkit-animation: fadeIn 1.2s ease 0s 1 normal;
@@ -243,7 +243,7 @@ button {
 .hero__place {
   color: #FFF;
   margin: 0 auto;
-  font-size: 2.4rem;
+  font-size: 1.6rem;
   text-align: center;
   font-weight: bold;
   letter-spacing: .5px;
@@ -295,18 +295,36 @@ button {
   font-weight: bold;
 }
 
-/* メディアクエリ */
-
-@media only screen and (min-width: 768px) {
-
-}
-
 /* ユーティリティー */
 
-.hidden {
+.hidden-mb {
   text-indent: -9999px;
   visibility: hidden;
   display: none;
+}
+
+.hidden-pc {
+  display: inherit;
+}
+
+/* メディアクエリ */
+
+@media only screen and (min-width: 768px) {
+  .hero__logo {
+    max-width: 260px;
+  }
+  .hero__date,
+  .hero__place {
+    font-size: 2.4rem;
+  }
+  .hidden-mb {
+    display: inherit;
+  }
+  .hidden-pc {
+    text-indent: -9999px;
+    visibility: hidden;
+    display: none;
+  }
 }
 
 /* アニメーション */
