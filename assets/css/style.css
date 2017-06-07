@@ -190,6 +190,7 @@ button {
   max-width: 1260px;
   height: 80px;
   box-sizing: border-box;
+  margin: 0 auto;
   padding: 0 20px;
   display: flex;
   -webkit-justify-content: space-between;
