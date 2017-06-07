@@ -3,21 +3,18 @@ title: ''
 layout: default
 ---
 
-<main class="content" role="main">
-
+<main role="main">
   <article class="post">
-
-    <header class="post-header">
-      <h1 class="post-title">{{ page.title }}</h1>
-      <section class="post-meta">
-        <time class="post-date" datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ post.date | date: "%-d of %b of %Y" }}</time>
+    <div class="post__inner">
+      <header class="post__header">
+        <h1 class="post__title">{{ page.title }}</h1>
+        <section class="post__meta">
+          <time class="post__meta__date" datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ post.date | date: "%-d of %b of %Y" }}</time>
+        </section>
+      </header>
+      <section class="post__body">
+        {{content}}
       </section>
-    </header>
-
-    <section class="post-content">
-      {{content}}
-    </section>
-
+    </div>
   </article>
-
 </main>
