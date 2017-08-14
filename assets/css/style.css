@@ -352,7 +352,10 @@ button {
   border-radius: 20px;
 }
 .default-section__img--guest {
-  max-width: 240px;
+  max-width: 200px;
+  margin: 0 auto 10px;
+}
+.default-section__img--staff {
   margin: 0 auto 10px;
 }
 .default-section__caption {
