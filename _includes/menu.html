@@ -1,13 +1,19 @@
-<nav class="header__nav">
-  <ul class="header__items">
-    {% if page.layout == "default" %}
-      <li class="header__item"><a href="#about">About</a></li>
-      <li class="header__item"><a href="#tickets">Tickets</a></li>
-      <li class="header__item"><a href="./coc.html">CoC</a></li>
-    {% else %}
-      <!-- 予約時に表示
-        <li class="header__item"><a href="#">チケットを予約する</a></li>
-      -->
-    {% endif %}
-  </ul>
-</nav>
+<div class="drawer drawer--closed">
+  <nav>
+    <ul class="drawer__items">
+      {% if page.layout == "default" %}
+        <li class="drawer__item"><a class="js-drawer-toggle" href="#about">About</a></li>
+        <li class="drawer__item"><a class="js-drawer-toggle" href="#tickets">Tickets</a></li>
+        <li class="drawer__item"><a class="js-drawer-toggle" href="#tickets">Guest Speakers</a></li>
+        <li class="drawer__item"><a class="js-drawer-toggle" href="#tickets">Time Table</a></li>
+        <li class="drawer__item"><a class="js-drawer-toggle" href="#tickets">Sponsors</a></li>
+        <li class="drawer__item"><a class="js-drawer-toggle" href="#tickets">Staff</a></li>
+        <li class="drawer__item"><a href="./coc.html">CoC</a></li>
+      {% else %}
+        <!-- 予約時に表示
+          <li class="drawer__item"><a href="#">チケットを予約する</a></li>
+        -->
+      {% endif %}
+    </ul>
+  </nav>
+</div>

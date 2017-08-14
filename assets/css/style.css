@@ -234,6 +234,56 @@ button {
   color: #F0D719;
 }
 
+.drawer {
+  height: 100vh;
+  overflow-y: auto;
+  width: 200px;
+  max-width: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 20px;
+  background: rgba(0,0,0,.7);
+  z-index: 9999;
+  box-sizing: border-box;
+  -webkit-transition: -webkit-transform 0.5s ease;
+          transition: transform 0.5s ease;
+}
+.drawer--closed {
+  transform: translateX(240px);
+}
+.drawer__toggle {
+  width: 60px;
+  height: 60px;
+  font-size: 4rem;
+  overflow: hidden;
+  text-align: center;
+  border-width: 0;
+  background: transparent;
+  position: absolute;
+  top: 0;
+  right: 2px;
+  outline: 0;
+  z-index: 10000;
+}
+.drawer__items {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.drawer__item {
+  padding: 10px;
+}
+.drawer__item a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #FFF;
+  font-weight: bold;
+}
+.header__item a:hover {
+  color: #F0D719;
+}
+
 /* アイキャッチ */
 
 .hero {
