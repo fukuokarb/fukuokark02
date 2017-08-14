@@ -315,14 +315,17 @@ button {
   display: flex;
   -webkit-justify-content: space-around; /* Safari */
   justify-content:         space-around;
+  flex-wrap: wrap;
 }
 .default-section__card {
   padding: 20px;
 }
 .default-section__card--guest {
-  width: 50%;
+  max-width: 440px;
 }
-
+.default-section__card--staff {
+  width: 25%;
+}
 .default-section__table-wrap {
   margin: 0 auto;
   padding: 0 20px;
