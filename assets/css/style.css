@@ -355,13 +355,14 @@ button {
   max-width: 800px;
 }
 .default-section__table {
-  margin: 0 0 40px 0;
+  margin: 0 0 40px;
   width: 100%;
   display: table;
 }
 .default-section__table__row {
-  display: table-row;
+  padding: 10px 0;
   background: #F6F6F6;
+  display: table-row;
 }
 .default-section__table__row:nth-of-type(even) {
   background: #FFF;
@@ -374,19 +375,6 @@ button {
 .default-section__table__cell {
   padding: 5px 10px;
   display: table-cell;
-}
-@media screen and (max-width: 580px) {
-  .default-section__table {
-    display: block;
-  }
-  .default-section__table__row {
-    padding: 10px 0;
-    display: block;
-  }
-  .default-section__table__cell {
-    padding: 5px 10px;
-    display: block;
-  }
 }
 
 /* post */
