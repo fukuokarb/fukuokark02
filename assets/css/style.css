@@ -320,9 +320,16 @@ button {
   justify-content:         space-around;
   flex-wrap: wrap;
 }
+.default-section__card-wrap--staff {
+  -webkit-justify-content: flex-start; /* Safari */
+  justify-content:         flex-start;
+}
 .default-section__card {
   padding: 20px;
   box-sizing: border-box;
+}
+.default-section__card--staff {
+  width: 50%;
 }
 .default-section__button {
   position: relative;
@@ -443,10 +450,6 @@ button {
   .hero__date,
   .hero__place {
     font-size: 2.4rem;
-  }
-  .default-section__card-wrap--staff {
-    -webkit-justify-content: flex-start; /* Safari */
-    justify-content:         flex-start;
   }
   .default-section__card--guest {
     width: 50%;
