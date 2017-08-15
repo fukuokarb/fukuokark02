@@ -301,11 +301,9 @@ button {
   height: auto;
   border-radius: 20px;
 }
-.default-section__img--guest {
-  max-width: 200px;
-  margin: 0 auto 20px;
-}
+.default-section__img--guest,
 .default-section__img--staff {
+  max-width: 200px;
   margin: 0 auto 20px;
 }
 .default-section__caption {
