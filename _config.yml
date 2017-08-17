@@ -1,4 +1,4 @@
-title: 福岡Ruby会議02
+title: '福岡Ruby会議02 by Fukuoka.rb & Engineer Lab. Fukuoka'
 email: udzura@udzura.jp
 description: 「もう一度、Rubyと出会う」をテーマに、大名小跡地Fukuoka growth nextで行う地域Ruby会議です。2017.11.25(Sat) 開催予定
 baseurl: "/fukuoka02"
@@ -7,7 +7,6 @@ twitter_username: fukuokark
 github_username:  fukuokark
 #github_url: https://fukuokarb.connpass.com/
   
-
 # Build settings
 permalink: :title
 paginate: 1
