@@ -324,6 +324,7 @@ button {
   justify-content:         space-around;
   flex-wrap: wrap;
 }
+.default-section__card-wrap--sponsor-small,
 .default-section__card-wrap--staff {
   -webkit-justify-content: flex-start; /* Safari */
   justify-content:         flex-start;
@@ -332,6 +333,7 @@ button {
   padding: 20px;
   box-sizing: border-box;
 }
+.default-section__card--sponsor-small,
 .default-section__card--staff {
   width: 50%;
 }
