@@ -386,6 +386,15 @@ button {
   display: table-cell;
 }
 
+.cell0 {
+  width: 4%
+}
+.cell1 {
+  width: 47%
+}
+.cell2 {
+  width: 49%
+}
 /* post */
 
 .post {
