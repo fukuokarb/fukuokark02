@@ -361,7 +361,7 @@ button {
 .default-section__table-wrap {
   margin: 0 auto;
   padding: 0 20px;
-  max-width: 800px;
+  max-width: 900px;
 }
 .default-section__table {
   margin: 0 0 40px;
@@ -385,16 +385,27 @@ button {
   padding: 5px 10px;
   display: table-cell;
 }
+.default-section__table__cell--time {
+  width: 10%;
+}
+.default-section__table__cell--track1 {
+  width: 40%;
+}
+.default-section__table__cell--track2 {
+  width: 40%;
+}
+.default-section__table__title {
+  font-weight: bold;
+  font-size: 2.4rem;
+}
+.default-section__table__subtitle {
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+.default-section__table__body {
+  
+}
 
-.cell0 {
-  width: 4%
-}
-.cell1 {
-  width: 47%
-}
-.cell2 {
-  width: 49%
-}
 /* post */
 
 .post {
