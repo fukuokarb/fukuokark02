@@ -12,12 +12,12 @@ $(function () {
   $(".js-hamburger").on("click", function () {
     $(".js-nav").slideToggle(function () {
       $(".js-hamburger").hide();
-      $(".js-cross").show();
+      $(".js-close").show();
     });
   });
-  $(".js-cross").on("click", function () {
+  $(".js-close").on("click", function () {
     $(".js-nav").slideToggle(function () {
-      $(".js-cross").hide();
+      $(".js-close").hide();
       $(".js-hamburger").show();
     });
   });

@@ -179,7 +179,6 @@ button {
 .header {
   width: 100%;
   margin: 0 auto 80px;
-  overflow: hidden;
   z-index: 100;
   position: absolute;
 }
@@ -215,32 +214,19 @@ button {
 .header__switchs {
   display: block;
 }
-.header__switch--hamburger {
+.header__switch {
   background: none;
-  position: absolute;
-  top: 0;
-  right: 0;
-  line-height: 45px;
-  padding: 5px 15px 0px 15px;
   color: #FFF;
   border: 0;
-  cursor:pointer;
-  outline:none;
-  z-index:10000000000000;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  font-size: 3rem;
+  width: 30px;
+  height: 40px;
 }
 .header__switch--cross {
   display: none;
-  background: none;
-  position: absolute;
-  top: 0;
-  right: 0;
-  line-height: 45px;
-  padding: 5px 15px 0px 15px;
-  color: #FFF;
-  border: 0;
-  cursor:pointer;
-  outline:none;
-  z-index:10000000000000;
 }
 .header__nav {
   display: none;
@@ -268,37 +254,33 @@ button {
 }
 .header__hamburger-nav {
   display: none;
-  z-index:1000000;
-  width:100%;
-  background:#f1f1f1;
-  position:absolute;
-  text-align:center;
+  z-index: 1000000;
+  width: 100%;
+  background: #fafafa;
+  position: absolute;
+  text-align: center;
+  top: 80px;
+  left: 0;
 }
 .header__hamburger-nav__items {
   margin: 0;
   padding: 0;
-  list-style-type: none;
-  list-style-image: none;
+  list-style: none;
 }
 .header__hamburger-nav__item {
   display: block;
-  padding:15px 0 15px 0;
-  border-bottom:#dddddd 1px solid;
+  border-bottom: #ddd 1px solid;
 }
 .header__hamburger-nav__item:hover {
   display: block;
-  background:#ffffff;
-  padding:15px 0 15px 0;
-  border-bottom:#dddddd 1px solid;
+  background: #fff;
 }
 .header__hamburger-nav__item a {
-  text-decoration:none;
+  text-decoration: none;
   margin: 0px;
-  color:#666;
-}
-.header__hamburger-nav__item a:hover {
-  color: #666;
-  text-decoration:none;
+  padding: 2rem;
+  color: #59585B;
+  display: block;
 }
 
 /* アイキャッチ */
