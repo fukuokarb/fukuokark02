@@ -360,8 +360,7 @@ button {
 }
 .default-section__table-wrap {
   margin: 0 auto;
-  padding: 0 20px;
-  max-width: 900px;
+  max-width: 970px;
 }
 .default-section__table {
   margin: 0 0 40px;
@@ -370,11 +369,11 @@ button {
 }
 .default-section__table__row {
   padding: 10px 0;
-  background: #F6F6F6;
+  background: #FFF;
   display: table-row;
 }
 .default-section__table__row:nth-of-type(even) {
-  background: #FFF;
+  border-bottom: 1px solid #f6f6f6;
 }
 .default-section__table__header {
   font-weight: bold;
@@ -382,7 +381,7 @@ button {
   background: #F85032;
 }
 .default-section__table__cell {
-  padding: 5px 10px;
+  padding: 10px;
   display: table-cell;
 }
 .default-section__table__cell--time {
@@ -396,7 +395,8 @@ button {
 }
 .default-section__table__title {
   font-weight: bold;
-  font-size: 2.4rem;
+  font-size: 2rem;
+  line-height: 1.6;
 }
 .default-section__table__subtitle {
   font-weight: bold;
