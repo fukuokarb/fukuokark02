@@ -402,6 +402,8 @@ button {
 .default-section__table__cell {
   padding: 10px;
   display: table-cell;
+  font-size: 1.3rem;
+  line-height: 1.7;
 }
 .default-section__table__cell--time {
   width: 10%;
@@ -422,7 +424,7 @@ button {
   font-size: 1.6rem;
 }
 .default-section__table__body {
-  
+
 }
 
 /* post */
